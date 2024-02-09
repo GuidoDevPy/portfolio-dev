@@ -1,33 +1,38 @@
 ---
+
 import ExperienceItem from "./ExperienceItem.astro"
+
 const EXPERIENCIE = [
   {
     date: "Mayo 2023",
-    title: "Coordinador de voluntarios - DECIDAMOS.",
+    title: "Coordinador de voluntarios",
+    company: "DECIDAMOS",
     description:
       "Trabajar en coordinación con la Coordinadora de capacitación, el equipo de capacitación de voluntarios/as y los responsables departamentales del voluntariado. Generar base de datos a partir de la inscripción de voluntarios/as por departamentos y distritos donde cayeron las muestras. Realizar seguimiento al reclutamiento de voluntarios/as en los departamentos y distritos. Sistematización de datos.",
-    link: "https://www.linkedin.com/in/guido-blanco",
+    link: "https://saka.org.py",
   },
   {
     date: "Diciembre 2022",
-    title: "Aplicador y Procesador de datos PISA - MEC.",
+    title: "Aplicador y Procesador de datos PISA",
+    company: "MEC",
     description:
       "Procesamiento de los datos recogidos de las evaluaciones de PISA, bajo los estándares. Trabajar en coordinación con el ministerio de educación y culto para la ejecución de las evaluaciones. Aplicaciones en escuelas de Luque, Lambaré y Areguá a estudiantes de 15 años.",
   },
   {
     date: "Septiembre 2021",
-    title: "Soporte de Aplicaciones Dealers - Lothar Systems S.A.",
+    title: "Soporte de Aplicaciones Dealers",
+    company:"Lothar Systems S.A",
     description:
-      "Analizar los requerimientos solicitados por el cliente (RFP – Request For Proposal o Blueprint) y presentar un diseño de sistemas en una propuesta y mediante análisis previo, aplicando los conocimientos del negocio y la mejor solución. -Desarrollar las soluciones en base a especificaciones descriptas por otros Analistas o Arquitectos del negocio. Realizar pruebas y seguimientos de los programas desarrollados. Revisar y corregir los programas de acuerdo con requerimientos de cambio aprobado por el usuario.",
+      "Analizar los requerimientos solicitados por el cliente (RFP, Request For Proposal o Blueprint) y presentar un diseño de sistemas en una propuesta y mediante análisis previo, aplicando los conocimientos del negocio y la mejor solución. -Desarrollar las soluciones en base a especificaciones descriptas por otros Analistas o Arquitectos del negocio. Realizar pruebas y seguimientos de los programas desarrollados. Revisar y corregir los programas de acuerdo con requerimientos de cambio aprobado por el usuario.",
   },
 ]
 ---
 
-<ol class="relative border-s border-gray-200 ml-3">
+<ol class="relative mt-16">
   {
     EXPERIENCIE.map((experiencie) => (
-      <li class="mb-10 ms-4">
-        <ExperienceItem {...experiencie} />
+      <li class="">
+        <ExperienceItem {...experiencie}/>
       </li>
     ))
   }
